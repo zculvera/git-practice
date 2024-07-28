@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20240728 13:04:49.193" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\Admin\OneDrive\Documents\development\git-practice\test.robot">
+<test id="s1-t1" name="Say Hello" line="2">
+<kw name="Say Hello">
+<arg>Zerah</arg>
+<kw name="Log" library="BuiltIn">
+<arg>Hello ${name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240728 13:04:49.219" level="INFO">Hello Zerah</msg>
+<status status="PASS" starttime="20240728 13:04:49.219" endtime="20240728 13:04:49.219"/>
+</kw>
+<status status="PASS" starttime="20240728 13:04:49.218" endtime="20240728 13:04:49.219"/>
+</kw>
+<status status="PASS" starttime="20240728 13:04:49.218" endtime="20240728 13:04:49.219"/>
+</test>
+<status status="PASS" starttime="20240728 13:04:49.195" endtime="20240728 13:04:49.220"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
