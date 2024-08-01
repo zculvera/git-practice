@@ -12,6 +12,10 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@v3
+
+            - name: Set up epoch timestamp
+              id: epoch
+              run: echo "EPOCH=$(date +%s)" >> $GITHUB_ENV
             
             - name: Setup Python
               uses: actions/setup-python@v4
@@ -30,6 +34,6 @@ jobs:
               if: always()
               uses: actions/upload-artifact@v3
               with:
-                name: robot-test-results
+                name: robot-test-results-${{ env.EPOCH }}
                 path: results/
 
