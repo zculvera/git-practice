@@ -1,4 +1,4 @@
-name:    Robot Framework Tests
+name:    Security Smoke Tests
 
 on:
     push:
@@ -28,7 +28,7 @@ jobs:
                  pip install -r requirements.txt
 
             - name: Run Robot Framework tests
-              run:  robot -d results tests/
+              run:  robot -d results --include security tests/
 
             - name: Archive test results
               if: always()

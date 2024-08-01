@@ -9,6 +9,7 @@ ${PASSWORD}    tooteaonly
 
 *** Test Cases ***
 Create Auth Token Should Be 200
+    [Tags]    security
     [Documentation]    This test case creates a POST request to obtain an authentication token.
     ${response} =    Create Auth Token
     Should Be Equal As Strings    ${response.status_code}    200
